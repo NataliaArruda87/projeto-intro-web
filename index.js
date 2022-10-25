@@ -2,6 +2,7 @@
 
 const listaAssistidos = []
 
+
 serie1 = {
     titulo: "Arquivo X",
     temporadas: 11,
@@ -50,6 +51,7 @@ if (serie3.jaAssistiu){
     alert(`Serie ${serie3.titulo} não adicionada a sua lista de assistidos!`)
 }
 
+
 console.log(listaAssistidos)
 
 
@@ -57,11 +59,8 @@ for(series of listaAssistidos) {
     for(propriedades in series) {
         console.log(`${propriedades}: ${series[propriedades]}`)
     }
-    series.stringDoObjeto = series.elenco.join()
+    series.stringElenco = series.elenco.join(", ")
 }
-
-
-
 
 const mediaEp = (serie1.tempoEp+serie2.tempoEp+serie3.tempoEp) / 3
 console.log(`Duração media dos episódios: ${mediaEp}`)
