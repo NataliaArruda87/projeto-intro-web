@@ -242,13 +242,9 @@ footer {
         width: 48vw;
     }
 
-    #listasSeries {
-        gap: 32px;
-    }
-
     .serie {
         flex-wrap: wrap;
-        width: 85%;
+        width: 90%;
     }
 
     footer {
