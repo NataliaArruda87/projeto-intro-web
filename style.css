@@ -253,7 +253,7 @@ footer {
 
     footer {
         flex-direction: column;
-        height: 22vh;
+        height: 30vh;
     }
 
     #anoDev {
@@ -262,7 +262,8 @@ footer {
 
     #Media {
         width: 20%;
-        height: 20%;
+        height: 10%;
+        flex-grow: 0.2;
     }
 
    
