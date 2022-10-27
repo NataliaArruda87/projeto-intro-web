@@ -253,12 +253,14 @@ footer {
 
     #play {
         width: 40%;
-        margin: 16px;
     }
     
-    #stream{
+    #stream {
         width: 200%;
-        margin: 16px;
+    }
+
+    .trailer {
+        margin-left: 48px;
     }
 
     footer {
