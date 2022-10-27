@@ -253,10 +253,12 @@ footer {
 
     #play {
         width: 40%;
+        margin: 16px;
     }
     
     #stream{
         width: 200%;
+        margin: 16px;
     }
 
     footer {
@@ -269,8 +271,8 @@ footer {
     }
 
     #Media {
-        width: 2%;
-        height: 1%;
+        width: 0.5%;
+        height: 0.25%;
         flex-grow: 0.2;
     }
 
