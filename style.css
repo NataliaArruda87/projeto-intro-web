@@ -21,7 +21,7 @@ header {
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px solid black;
-    height: 12vh;
+    height: 13vh;
     padding: 16px;
 }
 
@@ -41,14 +41,14 @@ header {
     background-color: rgb(38, 32, 32);
     color: white; 
     height: 7vh;
-    margin-top: 25px;
+    margin-top: 32px;
     border-radius: 0.625rem 0.625rem 0 0;
     border-top: 2px solid rgb(194, 186, 186);
     border-right: 2px solid rgb(194, 186, 186);
     border-left: 2px solid rgb(194, 186, 186);
 }
 
-#m1, #m2, #m3, #m4, #m4 {
+#m1, #m2, #m3, #m4 {
     display: flex;
     flex-grow: 1;
     align-items: center;
@@ -100,17 +100,10 @@ button {
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
+    height: 100%;
 }
 
-.middle {
-    display: flex;
-    flex-grow: 1; 
-}
-
-.listasSeries {
+#listasSeries {
     display: flex;
     flex-direction: column;
     flex-grow: 3;   
@@ -119,9 +112,10 @@ main {
     margin: 8px 8px;
     padding: 8px 8px 8px 16px;
     gap: 16px;
+    
 }
 
-#serie1, #serie2, #serie3, #serie4{
+.serie {
     display: flex;
     width: 50%;
     justify-content: center;
@@ -130,10 +124,10 @@ main {
     opacity: 0.9;
     border-radius: 0.625rem 1.25rem;
     box-shadow: 10px 12px rgb(194, 186, 186);
-   
+
 }
 
-#serie1Description, #serie2Description, #serie3Description, #serie4Description  {
+#Description {
     display: flex;
     flex-direction: column;
     margin: 8px 8px;
@@ -147,13 +141,14 @@ h3 {
 
 ul {
     margin-top: 8px;
+    list-style: none;
 }
 
 img {
     margin:16px
 }
 
-#img2, #img3, #img4 {
+.imgCapa {
     height: 243px;
     width: 166px;
 }
@@ -163,20 +158,37 @@ img {
     justify-content: space-evenly;
     height: 4vh;
     align-items: center;
-    margin: 16px;
-    
+    margin: 16px; 
 }
 
 #play {
     width: 20%;
+    margin: 8px;
 }
 
+#stream{
+    width: 100%;
+    margin: 8px;
+}
+
+
+.trailer {
+    margin-left: 16px;
+}
+
+
+.assistir {
+    margin-right: 4px;
+}
+
+
 footer {
+    position: static;
     display: flex;
     background-color: black;
     color: white;
-    height: 8vh;
-    justify-content: space-around;
+    height: 10vh;
+    justify-content: space-evenly;
     align-items: center;
     flex-grow: 1;
 }
@@ -187,8 +199,19 @@ footer {
     flex-grow: 0.8;
 }
 
+#anoDev {
+    display: flex;
+    justify-content: center;
+    flex-grow: 4;
+}
+
+#link {
+    display: flex;
+    justify-content: center;
+}
+
 #Media {
-    width: 2%;
+    width: 4%;
 }
 
 
@@ -215,9 +238,14 @@ footer {
         width: 92vw;
     }
 
-    #serie1, #serie2, #serie3, #serie4{
+    .serie {
         flex-wrap: wrap;
         width: 80%;
+    }
+
+    footer {
+        flex-direction: column;
+        height: 22vh;
     }
 
    
