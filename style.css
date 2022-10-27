@@ -261,8 +261,8 @@ footer {
     }
 
     #Media {
-        width: 20%;
-        height: 10%;
+        width: 10%;
+        height: 5%;
         flex-grow: 0.2;
     }
 
