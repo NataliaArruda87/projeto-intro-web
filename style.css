@@ -26,8 +26,7 @@ header {
 }
 
 #logo {
-    height: 20vh;
-    width: 18vw;
+    width: 16%;
     padding: 22px;
     margin: 16px;
     
@@ -228,19 +227,24 @@ footer {
     }
 
     #logo {
-        height: 30vh;
-        width: 34vw;   
+        width: 80%;  
         margin: 0; 
     }
 
     .menu {
         margin: 10px;
         width: 92vw;
+        height: 3vh;
+        flex-grow: 0.3;
+    }
+
+    input {
+        width: 48vw;
     }
 
     .serie {
         flex-wrap: wrap;
-        width: 80%;
+        width: 85%;
     }
 
     footer {
