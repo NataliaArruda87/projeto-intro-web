@@ -243,12 +243,20 @@ footer {
     }
 
     #listasSeries{
-        gap: 50px;
+        gap: 100px;
     }
 
     .serie {
         flex-wrap: wrap;
         width: 90%;
+    }
+
+    #play {
+        width: 40%;
+    }
+    
+    #stream{
+        width: 200%;
     }
 
     footer {
@@ -261,8 +269,8 @@ footer {
     }
 
     #Media {
-        width: 4%;
-        height: 2%;
+        width: 2%;
+        height: 1%;
         flex-grow: 0.2;
     }
 
