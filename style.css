@@ -260,6 +260,10 @@ footer {
         flex-grow: 1;
     }
 
+    #Media {
+        width: 0.05%;
+    }
+
    
 }
 
