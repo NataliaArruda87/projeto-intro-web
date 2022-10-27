@@ -256,8 +256,8 @@ footer {
         height: 22vh;
     }
 
-    #Media {
-        width: 1%;
+    #anoDev {
+        flex-grow: 1;
     }
 
    
