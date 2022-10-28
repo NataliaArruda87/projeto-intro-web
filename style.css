@@ -106,7 +106,7 @@ main {
     display: flex;
     flex-direction: column;
     flex-grow: 3;   
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center; 
     margin: 8px 8px;
     padding: 8px 8px 8px 16px;
