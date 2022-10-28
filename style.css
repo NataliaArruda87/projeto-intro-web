@@ -148,9 +148,11 @@ img {
 }
 
 .imgCapa {
+    display: flex;
     height: 243px;
     width: 166px;
 }
+
 
 .linksExternos {
     display: flex;
@@ -234,7 +236,7 @@ footer {
     .menu {
         margin: 10px;
         width: 92vw;
-        height: 3vh;
+        height: 4vh;
         flex-grow: 0.3;
     }
 
@@ -260,7 +262,7 @@ footer {
     }
 
     .trailer {
-        margin-left: 48px;
+        margin-left: 48gpx;
     }
 
     footer {
@@ -280,6 +282,7 @@ footer {
 
    
 }
+
 
 
 

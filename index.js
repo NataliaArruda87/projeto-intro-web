@@ -67,7 +67,6 @@ serie4 = {
     play: "./Assets/play.png"
 }
 
-/*
 console.log(serie1.titulo.toUpperCase())
 console.log(`Temporadas: ${serie1.temporadas}`)
 console.log(`Duração Episódios: ${serie1.tempoEp}`)
@@ -75,6 +74,7 @@ console.log(`Ano: ${serie1.ano}`)
 console.log(`Diretor: ${serie1.diretor}`)
 console.log(`Já assistiu? ${serie1.jaAssistiu}`)
 console.log(`Elenco: ${serie1.elenco}`)
+console.log(`Genero: ${serie1.genero}`)
 
 console.log(serie2.titulo.toUpperCase())
 console.log(`Temporadas: ${serie2.temporadas}`)
@@ -83,6 +83,7 @@ console.log(`Ano: ${serie2.ano}`)
 console.log(`Diretor: ${serie2.diretor}`)
 console.log(`Já assistiu? ${serie2.jaAssistiu}`)
 console.log(`Elenco: ${serie2.elenco}`)
+console.log(`Genero: ${serie2.genero}`)
 
 console.log(serie3.titulo.toUpperCase())
 console.log(`Temporadas: ${serie3.temporadas}`)
@@ -91,6 +92,7 @@ console.log(`Ano: ${serie3.ano}`)
 console.log(`Diretor: ${serie3.diretor}`)
 console.log(`Já assistiu? ${serie3.jaAssistiu}`)
 console.log(`Elenco: ${serie3.elenco}`)
+console.log(`Genero: ${serie3.genero}`)
 
 console.log(serie4.titulo.toUpperCase())
 console.log(`Temporadas: ${serie4.temporadas}`)
@@ -99,8 +101,9 @@ console.log(`Ano: ${serie4.ano}`)
 console.log(`Diretor: ${serie4.diretor}`)
 console.log(`Já assistiu? ${serie4.jaAssistiu}`)
 console.log(`Elenco: ${serie4.elenco}`)
+console.log(`Genero: ${serie4.genero}`)
 
-*/
+
 const mediaEp = (serie1.tempoEp+serie2.tempoEp+serie3.tempoEp+serie4.tempoEp) / 4
 console.log(`Duração media dos episódios: ${mediaEp}`)
 
@@ -134,6 +137,14 @@ if (serie4.jaAssistiu){
 console.log(listaAssistidos)
 
 
+for(series of listaAssistidos) {
+    for(propriedades in series) {
+        console.log(`${propriedades}: ${series[propriedades]}`)
+    }
+    series.stringElenco = series.elenco.join(", ")
+}
+
+
 function stringsDoRelatorio (objeto) {
     console.log(objeto)
 }
@@ -160,20 +171,13 @@ const filtragem = (arraySeries, string) => {
 filtragem(listaAssistidos, "Arquivo X")
 
 
-for(series of listaAssistidos) {
-    for(propriedades in series) {
-        console.log(`${propriedades}0: ${series[propriedades]}`)
-    }
-    series.stringElenco = series.elenco.join(", ")
-}
-
-
 let button = document.querySelector("#botao")
 let input = document.querySelector("#pesquisa")
 let cardSerie1 = document.querySelector("#serie1")
 let cardSerie2 = document.querySelector("#serie2")
 let cardSerie3 = document.querySelector("#serie3")
 let cardSerie4 = document.querySelector("#serie4")
+let altura = document.querySelector("#listasSeries")
 
     button.addEventListener("click", function() {
         const inputDigitado = input.value
@@ -182,21 +186,25 @@ let cardSerie4 = document.querySelector("#serie4")
             cardSerie2.style.display = "none"
             cardSerie3.style.display = "none"
             cardSerie4.style.display = "none"
+            altura.style.height = "460px"
         }else if (inputDigitado.toLowerCase() === "o alienista" || inputDigitado.toLowerCase() === "épico") {
             cardSerie1.style.display = "none"
             cardSerie2.style.display = "flex"
             cardSerie3.style.display = "none"
             cardSerie4.style.display = "none"
+            altura.style.height = "460px"
         }else if (inputDigitado.toLowerCase() === "the walking dead" || inputDigitado.toLowerCase() === "ação" || inputDigitado.toLowerCase() === "terror") {
             cardSerie1.style.display = "none"
             cardSerie2.style.display = "none"
             cardSerie3.style.display = "flex"
             cardSerie4.style.display = "none"
+            altura.style.height = "460px"
         } else if (inputDigitado.toLowerCase() === "downton abbey" || inputDigitado.toLowerCase() === "histórico" ) {
             cardSerie1.style.display = "none"
             cardSerie2.style.display = "none"
             cardSerie3.style.display = "none"
             cardSerie4.style.display = "flex"
+            altura.style.height = "460px"
         } else if (inputDigitado.toLowerCase() === "suspense") {
             cardSerie1.style.display = "none"
             cardSerie2.style.display = "flex"
@@ -212,9 +220,14 @@ let cardSerie4 = document.querySelector("#serie4")
             cardSerie2.style.display = "flex"
             cardSerie3.style.display = "none"
             cardSerie4.style.display = "none"
+        } else {
+            alert("Nenhuma serie encontrada!")
         }
     })
 
- 
+   
+    
+
+   
 
 
