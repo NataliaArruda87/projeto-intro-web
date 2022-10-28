@@ -186,25 +186,25 @@ let altura = document.querySelector("#listasSeries")
             cardSerie2.style.display = "none"
             cardSerie3.style.display = "none"
             cardSerie4.style.display = "none"
-            altura.style.height = "35rem"
+            altura.style.height = "55rem"
         }else if (inputDigitado.toLowerCase() === "o alienista" || inputDigitado.toLowerCase() === "épico") {
             cardSerie1.style.display = "none"
             cardSerie2.style.display = "flex"
             cardSerie3.style.display = "none"
             cardSerie4.style.display = "none"
-            altura.style.height = "35rem"
+            altura.style.height = "55rem"
         }else if (inputDigitado.toLowerCase() === "the walking dead" || inputDigitado.toLowerCase() === "ação" || inputDigitado.toLowerCase() === "terror") {
             cardSerie1.style.display = "none"
             cardSerie2.style.display = "none"
             cardSerie3.style.display = "flex"
             cardSerie4.style.display = "none"
-            altura.style.height = "35rem"
+            altura.style.height = "55rem"
         } else if (inputDigitado.toLowerCase() === "downton abbey" || inputDigitado.toLowerCase() === "histórico" ) {
             cardSerie1.style.display = "none"
             cardSerie2.style.display = "none"
             cardSerie3.style.display = "none"
             cardSerie4.style.display = "flex"
-            altura.style.height = "35rem"
+            altura.style.height = "55rem"
         } else if (inputDigitado.toLowerCase() === "suspense") {
             cardSerie1.style.display = "none"
             cardSerie2.style.display = "flex"
@@ -223,6 +223,7 @@ let altura = document.querySelector("#listasSeries")
         } else {
             alert("Nenhuma serie encontrada!")
         }
+        input.value = ""
     })
 
    
